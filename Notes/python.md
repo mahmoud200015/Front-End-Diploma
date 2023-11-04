@@ -1,26 +1,48 @@
-# Notes from courses (h1)
-## Items (h2)
-* Lists (dot)
-1. 
-2. 
+compile تجميع
+interpret تفسير
+combination مزيج بين الطريقتين
 
-- item 1
-- item 2
-- item 3
+compiled بيقرأ الكود كله وينفذه
+interpreted بيقرأ سطر سطر ويفذه
 
-> block 1 
->> block 2
->>> block 3
+compilred languages -> c, c++, objective-c
+interpreted languages -> php, javascript
+combination -> java, c#, python
+---------------
+- most popular languages:
+python, javascript, java
 
-``` js -- code here
-// Comments
-conosle.log("Write code here");
-```
-***bold text and italic*** 
+version 3.10.4 (e.g. python)
+3 = Major version (new full version)
+10 = Minor version (new features to current version, few changes of current version)
+4 = Patch version (fix few things like errors or bugs)
 
-**bold text**
+- To run your program (4 ways)
+1. Python shell
+2. Command-line (cmd)
+3. IDE (vsCode)
+4. Online Editor
 
-__bold text__
+statements consist of (keywords, expressions, operators)
+operators (arthimatic(+,-,*,/), 
+          relational(>,<,>=,<=,==,!=), 
+          logical(and, or, not))
 
-*italic text*
+- Three types of errors
+  1. Syntax: language rules broken خطأ فى بناء الجملة
+  2. Runtime: unable to execute خطأ أثناء وقت التشغيل
+  3. Semantic: unexpected output خطأ دلالى
+
+--------------------------
+
+statically typed languages: c#, c++, java
+dynamically typed languages: javascript, python
+
+interger => (int, float)
+strings => (letters, numbers, symbols, spaces)
+
+paramaters => variables in defination of function
+arguments => variables in calling of function
+
+- --------------------------
 
