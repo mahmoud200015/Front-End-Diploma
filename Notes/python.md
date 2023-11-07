@@ -44,5 +44,24 @@ strings => (letters, numbers, symbols, spaces)
 paramaters => variables in defination of function
 arguments => variables in calling of function
 
-- --------------------------
+----------------------------
+
+* Multi words variables name
+  1. Camel Case -> myVarName = "Ali"
+  2. Pascal Case -> MyVarName = "Ali"
+  3. Snake Case -> my_var_name = "Ali"
+
+-----------------------------
+
+```py
+x, y, z = 1, 2, 3
+print(z, y, x)
+
+v = y = z = "one value"
+print(v, y, z)
+
+names = ["ali", "mahmoud", "nada"]
+x, y, z = names
+print(z)
+```
 

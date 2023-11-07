@@ -53,3 +53,32 @@ use three double quotes
 The Only Way
 """
 
+x, y, z = 1, 2, 3
+print(z, y, x)
+
+v = y = z = "one value"
+print(v, y, z)
+
+names = ["ali", "mahmoud", "nada"]
+x, y, z = names
+print(z)
+
+x = "ali"
+def testVar():
+  global x 
+  x = "ahmed"
+  print(x)
+testVar()
+print(x)
+
+str, int, float, complex, bool
+list, tuple, range
+dict, set, frozenset
+bytes, bytearray, memoryview
+type(None)
+
+string = str("ali")
+number = int(10)
+boolean = bool(True)
+
+
