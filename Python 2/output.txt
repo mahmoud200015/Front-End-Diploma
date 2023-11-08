@@ -1,7 +1,6 @@
-adfaf
-adfaf
-fadfa
-dfad
-asd
-
-ad
+10
+20
+30
+40
+50
+Sum: 150

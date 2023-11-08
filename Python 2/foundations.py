@@ -138,44 +138,54 @@
 # valuesFile = open("./values.txt", "rt")
 result = ""
 
-# try:
-#     with open("./output.txt", "rt") as outputFile:
-#         print("Start reading from file")
-#         for line in outputFile:
-#             print(line)
-#             result += line
-#         print(result)
-# except FileNotFoundError:
-#     print("The file 'output.txt' was not found.")
-# except Exception as e:
-#     print(f"An error occurred: {e}")
 
+# valuesFile = open(r"Python 2\values.txt", "rt")
+# outputFile = open(
+#     r"Python 2\output.txt",
+#     "wt")
+# print("Start reading from file")
+# sum = 0    
+# for line in valuesFile:
+#     sum += int(line)
+#     print(line, end="", file=outputFile)
+# print("\nSum: " + str(sum), file=outputFile)
+# outputFile.close()
+# print("I am done")
 
-valuesFile = open("values.txt", "rt")
-outputFile = open("output.txt", "wt")
-print("Start reading from file")
-sum = 0
-for line in valuesFile:
-    sum += int(line)
-    print(line.rstrip(), file=outputFile)
-print("Sum: " + str(sum), file=outputFile)
-outputFile.close()
-print("I am done")
-
-import os
-
-file_path = './output.txt'
-
-if os.path.exists(file_path):
-    with open(file_path, 'r') as file:
-        content = file.read()
-    # Continue processing the file
-else:
-    print(f"The file '{file_path}' does not exist.")
 
 
 # # with open("values.txt", "rt") as file:
 #   # file.write("This is new")
 
-# # for line in valuesFile:
+# # for index, line in enumrate(valuesFile):
 # #   print(line)
+
+# Introduction to Debugging
+
+# Objects
+
+# from screwdriver import Screwdriver
+
+# slottedScrewdriver = Screwdriver("Black", 10, "Slotted", False, True)
+# slottedScrewdriver.rotates()
+# slottedScrewdriver.testsElectricity()
+
+# triWingScrewdriver = Screwdriver("Yellow", 15, "Tri_wing", True, False)
+# triWingScrewdriver.rotates()
+# triWingScrewdriver.testsElectricity()
+
+# philipsScrewdriver = Screwdriver("Red", 36, "Philips", True, False)
+# philipsScrewdriver.rotates()
+# philipsScrewdriver.testsElectricity()
+
+# test = Screwdriver("white", 20, "daf", "dfa", "dadfa")
+# test.rotates()
+# test.testsElectricity()
+
+# Advanced Topics
+# 1. memory management in programming language
+# 2. Introduction to multithreading
+# 3. Introduction to algorithms
+
+
+# Done
