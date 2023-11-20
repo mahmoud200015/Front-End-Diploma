@@ -67,3 +67,33 @@ print(z)
 
 ------------------------------
 
+working dirctory = folder that has all code files including (.git)
+repostory = (.git) folder was created when command (git init)
+
+- Initialize Git in the project folder.
+
+* all the commands together
+``` git
+git init , Initialize the Git Repo.
+git add -A , Add the files to Git index
+git commit -m 'Added my project', Commit the Added Files
+git remote add origin git@github.com:sammy/my-new-project.git , Add a new remote origin
+git push -u -f origin main , Push to GitHub
+
+```
+
+* Python divides the operators in the following groups:
+
+- Arithmetic operators
+- Assignment operators
+- Comparison operators
+- Logical operators
+- Identity operators
+- Membership operators
+- Bitwise operators
+
+Python Identity Operators (is, is not)
+Python Membership Operators (in, not in)
+
+- --------------------------------
+
