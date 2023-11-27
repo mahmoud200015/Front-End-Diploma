@@ -27,3 +27,8 @@ __bold text__
 
 *italic text*
 
+Languages | Abbreviation
+--- | ---
+JavaScript | js
+Python | py
+C++ | cpp

@@ -21,3 +21,24 @@ if 10 > 20: print("a is greater than b")
 # The pass Statement
 if False: pass
 
+for x in range(2, 30, 3):
+  print(x)
+
+for x in [0, 1, 2]:
+  pass
+# not like in other programmign language we couldn't make 
+# if, for is empty we put (pass)
+
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+from collections import deque
+
+queue = deque()
+
+print(queue)
+
