@@ -42,3 +42,7 @@ queue = deque()
 
 print(queue)
 
+# Plan for project o-x , prepare files and libraries
+
+
+
