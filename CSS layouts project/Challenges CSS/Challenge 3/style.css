@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.4;
+  font-family: sans-serif;
+}
+
+.course {
+  border: 4px solid black;
+  border-radius: 3px;
+  width: 770px;
+  padding: 20px;
+  margin: 20px auto 0;
+  position: relative;
+}
+
+.main-header::before {
+  content: "SALE";
+  position: absolute;
+  top: -10px;
+  left: -30px;
+  background-color: red;
+  color: #FFF;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transform: rotate(330deg);
+}
+
+.main-header {
+  background-color: #0039fe;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 0;
+  /* width: 600px; */
+  /* margin-bottom: 20px; */
+  border-radius: 3px;
+}
+
+.poster {
+  border-radius: 3px;
+  /* margin-bottom: 20px; */
+  width: 100%;
+}
+
+.price {
+  font-size: 24px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 12px;
+  color: gray;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.link-almdrasa:link, .link-almdrasa:visited {
+  color: #000;
+}
+
+.link-almdrasa:hover, .link-almdrasa:active {
+  text-decoration: none;
+}
+
+.roadmap-title {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 20px 0 5px;
+}
+
+.roadmap-list li {
+  /* display: inline-block; */
+  border-radius: 3px;
+  border: 2px solid;
+  padding: 5px 10px;
+  margin: 0;
+}
+
+.roadmap-list li:nth-child(1) {
+  border-color: #ffa500;
+}
+
+.roadmap-list li:nth-child(2) {
+  border-color: #000fff;
+}
+
+.roadmap-list li:nth-child(3) {
+  border-color: #f6f62b;
+}
+
+.css-fund {
+  font-size: 16px;
+  text-transform: capitalize;
+  margin: 20px 0 5px;
+}
+
+ul li {
+  list-style-type: square;
+  margin: 0 0 0 20px;
+}
+
+.go-course {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0039fe;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px 20px;
+  border: none;
+  /* margin-top: 20px; */
+  transition: 0.4s;
+}
+
+.go-course:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Layouts Using Floats */
+
+/* .course {
+  width: 770px;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #FFF;
+  color: #0039fe;
+  border: 2px solid #0039fe;
+}
+
+.first-section {
+  float: left;
+  width: 240px;
+}
+
+.second-section {
+  float: left;
+  width: 240px;
+  margin-left: 40px;
+}
+
+.third-section {
+  float: right;
+  width: 240px;
+}
+
+.clear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.go-course {
+  width: 100%;
+} */
+
+/* Layouts Using FlexBox */
+
+/* .main-header {
+  width: 100%; 
+  background-color: #FFF;
+  color: #0039fe;
+  border: 2px solid #0039fe;
+} */
+
+.roadmap-list {
+  display: flex;
+  gap: 10px;
+}
+
+.roadmap-list li {
+  /* display: flex; */
+  list-style-type: none;
+}
+
+/* .sections {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.section {
+  flex: 1;
+} */
+
+/* Layouts Using Grid */
+
+.course {
+  display: grid;
+  grid-template-columns: 240px 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+.main-header {
+  background-color: #FFF;
+  color: #0039fe;
+  border: 2px solid #0039fe;
+}
+
+header {
+  grid-column: 1/ -1;
+}
+
+.go-course {
+  grid-column: 1/ -1;
+}

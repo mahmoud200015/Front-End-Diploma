@@ -1,0 +1,312 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: #444;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #3D4E60;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#autor {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-list {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  /* margin-bottom: 60px; */
+  margin-top: 20px;
+  border-radius: 3px;
+  /* height: 80px; */
+}
+
+aside {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  border-radius: 3px;
+}
+
+aside h3 {
+  width: 200px;
+  margin: 0 auto 15px;
+  font-size: 20px;
+}
+
+/* Styling Links */
+a:link {
+  color: #109BA0;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+a:nth-child(3) {
+  margin: 0;
+}
+
+a:visited {
+  color: #109BA0;
+}
+
+a:hover {
+  color: #109BA0;
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+ul, ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.reactions {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+/* Pseudo Elements */
+
+h2::after {
+  content: "Trending 🔥";
+  background-color: #109BA0;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 30px;
+  margin-top: 14px;
+  border-radius: 3px;
+}
+
+/* RTL Styles */
+
+[dir="rtl"] body {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+[dir="rtl"] a:link {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+[dir="rtl"] nav a:link {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+[dir="rtl"] nav a:link:last-child {
+  margin-left: 0;
+}
+
+[dir="rtl"] .language-nav a:link {
+  margin-left: 0;
+}
+
+[dir="rtl"] h1::first-letter {
+  margin-left: 0;
+}
+
+[dir="rtl"] h2::after {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+[dir="rtl"] .separator {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+[dir="rtl"] .reactions {
+  right: auto;
+  left: 50px;
+}
+
+/* Floats */
+
+/* .author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+.nav-content {
+  float: right;
+}
+
+.main-nav {
+  float: left;
+}
+
+.language-nav {
+  float: right;
+  margin-left: 60px;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+ */
+
+/* FlexBox */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-content {
+  display: flex;
+  gap: 60px;
+}
+
+
+
+.author-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+aside {
+  flex: 0 0 350px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-style: normal;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.related-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Grid Layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  align-items: start;
+  column-gap: 75px;
+  row-gap: 50px;
+}
+
+.main-header {
+  grid-column: 1/ -1;
+}
+
+footer {
+  grid-column: 1/ -1;
+}
+

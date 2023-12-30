@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  color: #444;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: #3D4E60;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+#autor {
+  font-style: italic;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related-list {
+  list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  border-radius: 3px;
+  height: 80px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+  width: 500px;
+  border-radius: 3px;
+}
+
+/* Styling Links */
+a:link {
+  color: #109BA0;
+  text-decoration: none;
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+a:visited {
+  color: #109BA0;
+}
+
+a:hover {
+  color: #109BA0;
+  font-weight: bold;
+  text-decoration: underline wavy;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+nav {
+  font-size: 18px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+ul, ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.reactions {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+
+.separator {
+  margin-right: 30px;
+}
+
+/* Pseudo Elements */
+
+h2::after {
+  content: "Trending 🔥";
+  background-color: #109BA0;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: normal;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 30px;
+  margin-top: 14px;
+  border-radius: 3px;
+}
+
+/* RTL Styles */
+
+[dir=rtl] a:link {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+[dir=rtl] nav a:link {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+[dir=rtl] nav a:link:last-child {
+  margin-left: 0;
+}
+
+[dir=rtl] .language-nav a:link {
+  margin-left: 0;
+}
+
+[dir=rtl] h1::first-letter {
+  margin-left: 0;
+}
+
+[dir=rtl] h2::after {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+[dir=rtl] .separator {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+[dir=rtl] .reactions {
+  right: auto;
+  left: 50px;
+}

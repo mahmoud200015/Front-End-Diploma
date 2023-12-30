@@ -39,10 +39,18 @@ print(next(myit))
 from collections import deque
 
 queue = deque()
-
 print(queue)
 
-# Plan for project o-x , prepare files and libraries
 
+def fun1(a, b):
+  def fun2(c, d):  
 
+    return c + d        
 
+  return fun2(a, b)    
+
+result = fun1(5,10)
+
+print(result)
+
+# ------------------------------------------- Done
